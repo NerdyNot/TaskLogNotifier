@@ -4,6 +4,7 @@
     "name": "Task Log Notifier",
     "version": "1.0.0",
     "publisher": "NerdyNot",
+    "public": true,
     "targets": [
       {
         "id": "Microsoft.VisualStudio.Services"
