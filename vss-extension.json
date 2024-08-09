@@ -14,8 +14,23 @@
     "categories": [
       "Azure Pipelines"
     ],
+    "tags": [
+        "log"
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/NerdyNot/TaskLogNotifier"
+    },    
     "icons": {
-      "default": "res/nerdynot-circle.png"
+      "default": "res/nerdynot_128.png"
     },
     "files": [
       {
