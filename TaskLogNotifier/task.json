@@ -1,0 +1,45 @@
+{
+  "id": "a7b8c9d0-e1f2-3456-789a-bcdef0123456",
+  "name": "TaskLogNotifier",
+  "friendlyName": "Task Log Notifier",
+  "description": "Sends task logs via API or Webhook on success or failure",
+  "category": "Utility",
+  "author": "NerdyNot",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "instanceNameFormat": "Task Log Notifier",
+  "inputs": [
+    {
+      "name": "personalAccessToken",
+      "type": "secureString",
+      "label": "Personal Access Token",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "The personal access token to access Azure DevOps REST API."
+    },
+    {
+      "name": "apiUrl",
+      "type": "string",
+      "label": "API URL",
+      "defaultValue": "",
+      "required": true
+    },
+    {
+      "name": "customHeaders",
+      "type": "multiLine",
+      "label": "Custom Headers",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "Enter custom headers in the format `key:value`, separated by commas. For example: `Content-Type:application/json, Authorization:Bearer token`."
+    }
+  ],
+  "execution": {
+    "Node10": {
+      "target": "index.js"
+    }
+  },
+  "icon": "res/nerdynot-circle.png"
+}

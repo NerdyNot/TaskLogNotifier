@@ -1,0 +1,13 @@
+{
+  "name": "task-log-notifier",
+  "description": "Sends task logs via API or Webhook on success or failure",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "azure-devops-extension-sdk": "^4.0.2",
+    "azure-pipelines-task-lib": "^4.15.0"
+  },
+  "devDependencies": {
+    "tfx-cli": "^0.9.3"
+  }
+}
